@@ -16,6 +16,7 @@ sudo apt-get update
 sudo apt-get install rabbitvcs-nautilus3 -y
 
 # my current used repositories
+cd git
 git clone ssh://git@drz-git.ethz.ch/vfrv.git
 svn co svn+ssh://gohlp@svn.aslforge.ethz.ch/svnroot/dslocalization
 
@@ -33,6 +34,8 @@ sudo apt-get install gconf-editor -y
 gconftool-2 -t int -s /apps/compiz-1/plugins/unityshell/screen0/options/stop_velocity 10
 gconftool-2 -t int -s /apps/compiz-1/plugins/unityshell/screen0/options/overcome_pressure 10
 gconftool-2 -t int -s /apps/compiz-1/plugins/unityshell/screen0/options/reveal_pressure 10
+
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 2
 
 # setup my ssh keys
 mkdir ~/.ssh
