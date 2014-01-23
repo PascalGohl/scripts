@@ -27,7 +27,8 @@ sudo apt-get install indicator-multiload -y
 indicator-multiload &
 
 # other usefull utilities
-sudo apt-get install htop vim openssh-server smbnetfs vlc gtkterm -y
+sudo apt-get install htop vim openssh-server smbnetfs vlc gtkterm nautilus-open-terminal -y
+
 
 # config unity
 sudo apt-get install gconf-editor -y
