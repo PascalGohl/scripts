@@ -38,6 +38,9 @@ gconftool-2 -t int -s /apps/compiz-1/plugins/unityshell/screen0/options/reveal_p
 
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 2
 
+# turn Ubuntu crash reporting off
+sed 's/^enabled=1$/enabled=0/' /etc/default/apport
+
 # setup my ssh keys
 mkdir ~/.ssh
 chmod 700 ~/.ssh
