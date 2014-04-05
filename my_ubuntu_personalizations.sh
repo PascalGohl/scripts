@@ -9,6 +9,10 @@ git config --global color.status auto
 git config --global color.branch auto
 git config --global push.default simple
 
+# nautilus replacement
+sudo add-apt-repository ppa:noobslab/mint
+sudo apt-get update
+sudo apt-get install nemo nemo-preview nemo-compare nemo-dropbox nemo-fileroller nemo-pastebin nemo-seahorse nemo-share nemo-rabbitvcs nemo-terminal  -y
 
 # nautilus svn/git plugin
 sudo add-apt-repository ppa:rabbitvcs/ppa
