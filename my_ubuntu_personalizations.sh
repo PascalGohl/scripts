@@ -56,6 +56,13 @@ chmod 600 ~/.ssh/id_dsa
 # maltab preparation
 sudo ln -s /usr/local/MATLAB/R2012a/bin/matlab /usr/sbin/matlab
 
+#install and build gtest
+sudo apt-get install libgtest
+cd /usr/src/gtest
+sudo cmake .
+sudo make
+sudo mv libg* /usr/lib/
+
 # install Oracle java
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
