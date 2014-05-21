@@ -9,6 +9,12 @@ git config --global color.status auto
 git config --global color.branch auto
 git config --global push.default simple
 
+#enable git subtree on ubuntu
+#Git subtree is installed by default on Ubuntu 13.04 and 13.10, but it is not enabled.  To enable it:
+sudo chmod +x /usr/share/doc/git/contrib/subtree/git-subtree.sh
+sudo ln -s /usr/share/doc/git/contrib/subtree/git-subtree.sh /usr/lib/git-core/git-subtree
+
+
 # nautilus replacement
 sudo add-apt-repository ppa:noobslab/mint
 sudo apt-get update
