@@ -75,12 +75,12 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer
 
 # eclipse
-wget http://mirror.switch.ch/eclipse/technology/epp/downloads/release/kepler/SR2/eclipse-cpp-kepler-SR2-linux-gtk-x86_64.tar.gz
-tar -zxvf eclipse-cpp-kepler-SR2-linux-gtk-x86_64.tar.gz
+wget http://mirror.switch.ch/eclipse/technology/epp/downloads/release/luna/R/eclipse-cpp-luna-R-linux-gtk-x86_64.tar.gz
+tar -zxvf eclipse-cpp-luna-R-linux-gtk-x86_64.tar.gz
 sudo mv eclipse /opt
 sudo chown pascal -R /opt/eclipse/
 sudo ln -s /opt/eclipse/eclipse /usr/sbin/eclipse
-rm eclipse-cpp-kepler-SR2-linux-gtk-x86_64.tar.gz
+rm eclipse-cpp-luna-R-linux-gtk-x86_64.tar.gz
 # setup unity link
 cat > eclipse.desktop << "EOF"
 [Desktop Entry]
