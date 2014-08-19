@@ -31,8 +31,6 @@ git clone ssh://git@drz-git.ethz.ch/vfrv.git
 svn co svn+ssh://gohlp@svn.aslforge.ethz.ch/svnroot/dslocalization
 
 # system monitor
-sudo add-apt-repository ppa:indicator-multiload/stable-daily -y
-sudo apt-get update
 sudo apt-get install indicator-multiload -y
 indicator-multiload &
 
