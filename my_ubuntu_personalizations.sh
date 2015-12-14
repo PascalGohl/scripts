@@ -112,4 +112,7 @@ sudo cp /opt/eclipse/icon.xpm /usr/share/pixmaps/eclipse.xpm
 # additional latex style sheets
 sudo apt-get install texlive-latex-recommended texlive-latex-extra -y
 
+sudo apt-get install terminator -y
+# set terminator as default terminal for gnome shortcut
+gsettings set org.gnome.desktop.default-applications.terminal exec /usr/bin/terminator
 
