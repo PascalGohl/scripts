@@ -74,12 +74,13 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer
 
 # eclipse
-wget http://mirror.switch.ch/eclipse/technology/epp/downloads/release/luna/SR1/eclipse-cpp-luna-SR1-linux-gtk-x86_64.tar.gz
-tar -zxvf eclipse-cpp-luna-SR1-linux-gtk-x86_64.tar.gz
+wget http://mirror.switch.ch/eclipse/technology/epp/downloads/release/mars/2/eclipse-dsl-mars-2-linux-gtk-x86_64.tar.gz
+tar -zxvf eclipse-dsl-mars-2-linux-gtk-x86_64.tar.gz
+sudo rm /opt/eclipse -rf
 sudo mv eclipse /opt
 sudo chown pascal -R /opt/eclipse/
 sudo ln -s /opt/eclipse/eclipse /usr/sbin/eclipse
-rm eclipse-cpp-luna-SR1-linux-gtk-x86_64.tar.gz
+rm eclipse-dsl-mars-2-linux-gtk-x86_64.tar.gz
 # setup unity link
 cat > eclipse.desktop << "EOF"
 [Desktop Entry]
